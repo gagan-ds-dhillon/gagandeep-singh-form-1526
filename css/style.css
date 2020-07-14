@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Cabin', sans-serif;
+	font-size: 16px;
+	background: #000;
+	color: #DCD0FF;
+}
+
+body{
+	margin: 0;
+	line-height: 1.5;
+	color: #DCD0FF;
+	font-size: 1rem;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+header ul{
+	display: flex;
+    justify-content: space-around;
+}
+
+
+
+header ul li {
+	list-style-type: none;
+}
+
+header a{
+	color: #DCD0FF;
+    text-decoration: none;
+}
+
+header a:hover{
+	border-bottom: 1px dashed #DCD0FF;
+}
+
+
+section.masthead{
+	background-image: url('../img/yellow-bokeh-photo-949587.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+section article.main-content{
+	background-color: rgba(51, 51, 51, 0.35);
+	max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+	width: 80%;
+}
+
+
+
+.company-name,.form-heading{
+	font-family: 'BioRhyme', serif;
+}
+
+.company-name{
+	font-size: 2rem;
+}
+
+form .form-border{
+    padding: 1rem;
+    border: 1px solid;
+}
+
+.form-border label{
+	color: #DCD0FF;
+}
+
+.form-border > div{
+	display: block;
+	width: 100%;
+}
+
+.form-border textarea{
+    border-radius: 5px;
+    border: none;
+	width: 100%;
+}
+
+.form-border input{
+	width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-border .submit-button{
+    border: none;
+	background-color: #DCD0FF;
+}
+
+.form-border textarea{
+	border-radius: 6px;
+	width: 100%;
+}
+
+footer{
+	    background-color: #333;
+    padding: 1.5rem;
+}
+footer ul{ display: flex; padding: 0;
+	justify-content: space-evenly;
+}
+footer ul li{ list-style-type: none; }
+footer ul li a{
+    color: #DCD0FF;
+}
+
+footer div.social-links{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*desktop*/
+@media (min-width: 35rem) {
+	body{
+		font-size: 1.5rem;
+	}
+
+	
+
+	.form-border > div:nth-of-type(1){
+		display: inline-block;
+		width: 48%;
+		margin-bottom: 1rem;
+	}
+
+	
+
+	.form-border > div:nth-of-type(2){
+		display: inline-block;
+		float: right;
+		margin-bottom: 1rem;
+		width: 48%;
+	}
+
+	
+
+	.form-border > div:nth-of-type(4){
+		margin-top: 1rem;
+	}
+}
+
